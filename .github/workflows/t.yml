@@ -1,0 +1,13 @@
+name: t
+on:
+  workflow_dispatch:
+    inputs:
+      idxs:
+        description: 'x'
+        required: false
+        default: '[]'
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hi
